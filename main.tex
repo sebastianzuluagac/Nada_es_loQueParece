@@ -13,15 +13,25 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Plantilla de Latex}
+        \textbf{Parcial practico 1}
             
         \vspace{0.5cm}
         \LARGE
-        Actividad inicial
+        Informe de analisis, diseño e implementacion
             
         \vspace{1.5cm}
             
-        \textbf{Jhon Doe}
+        \textbf{Brayan Estiben Gomez Carmona}
+        
+        \vspace{0.5cm}
+        
+        \LARGE
+        \textbf{Rolman David Echavarria Prince}
+        
+        \vspace{0.5cm}
+        
+        \LARGE
+        \textbf{Sebastian Zuluaga Correa}
 
         \vfill
             
@@ -31,12 +41,34 @@
         Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
-        Noviembre 18 de 2021
+        Febrero de 2022
             
     \end{center}
 \end{titlepage}
 
 \tableofcontents
+
+\newpage
+\section{Objetivos}\label{intro}
+Implementar un sistema de encripatcion de datos que permita cifrar los datos entre los sistemas de computo de las oficinas de una sucursal bancaria, los cuales usan infraestructura cableada para tal fin. la informacion viaja desde un computador de orige que es el genrador de la informacion, hasta un computador destino que es el que se presenta al encargado de tomar decisiones en la bolsa de valores.
+
+\subsection{Encriptacion}
+Desarrollar un codigo en la plataforma de desarrollo Qt que nos permita recibir una cadena de datos numericos entre 0 y 255, y luego nos genere una cadena binaria correspondiente a la representacion de estos datos.
+
+\subsection{Comunicacion serial}
+Establecer el envio y recepcion de datos entre dos dispositivos arduino (transmisor y receptor) por medio de dos puertos digitales estableciendo una comunicacion serial con sus respectivos relojes sincronizados.
+
+\subsection{Paralelizacion de datos}
+Por medio del cableado entre los arduinos conectar paralelamente un integrado 74HC595, realizar un estudio minucioso de este que nos permita obtener los datos que se envian de un arduino hacia otro e integrar 8 datos de estos datos simultaneamente.
+
+\subsection{Bandera}
+Recibir datos generados por el integrado 74HC595 en un hardware formado por compuertas logicas para la deteccion de un numero en especifico, que llamaremos bandera y nos servira para dar una señal de 5v al arduino receptor de modo tal que se integre a codigo como señal de lectura.
+
+\subsection{Desencriptacion}
+Desarrolar un codigo en nuestro arduino receptor que nos permite clasificar por medio de unas reglas dadas la informacion que se requiere en base a la señal dada por medio de nuestra bandera.
+
+\subsection{Entrega de informacion}
+Luego de tener clasificado nuestra informacion, entregarla a manera de visualizacion por medio de una pantalla LCD.
 
 \newpage
 \section{Análisis del problema}\label{intro}
