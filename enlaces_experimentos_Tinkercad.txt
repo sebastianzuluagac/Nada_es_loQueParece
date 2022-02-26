@@ -1,3 +1,6 @@
+lista de experimentos del punto 1
+
+
 experimento con arduino:
 
 https://www.tinkercad.com/things/adDxDSdmVWG-experimento2595arduino/editel
